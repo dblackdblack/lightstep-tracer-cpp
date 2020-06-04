@@ -201,7 +201,7 @@ std::shared_ptr<LightStepTracer> MakeLightStepTracer(
     } else {
       logger->set_level(LogLevel::error);
     }
-
+    logger->Error("XXX hello");
     // Copy over default tags.
     for (const auto& tag : GetDefaultTags()) {
       options.tags[tag.first] = tag.second;
